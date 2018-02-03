@@ -7,3 +7,4 @@ Image Gallery: https://akhan227.github.io/Udemy-Bootcamp-Projects/imageGallery/i
 Boot Strap Gallery: https://akhan227.github.io/Udemy-Bootcamp-Projects/bootstrapGallery/gallery.html
 
 Score Tracker: https://akhan227.github.io/Udemy-Bootcamp-Projects/scoreTracker/index.html
+
