@@ -4,7 +4,6 @@ Purrfect Match: https://akhan227.github.io/Udemy-Bootcamp-Projects/purrfectMatch
 
 Image Gallery: https://akhan227.github.io/Udemy-Bootcamp-Projects/imageGallery/index.html
 
-Boot Strap Gallery: https://akhan227.github.io/Udemy-Bootcamp-Projects/bootstrapGallery/gallery.html
+Boot Strap Gallery: https://akhan227.github.io/Udemy-Bootcamp-Projects/bootStrapGallery/gallery.html
 
 Score Tracker: https://akhan227.github.io/Udemy-Bootcamp-Projects/scoreTracker/index.html
-
