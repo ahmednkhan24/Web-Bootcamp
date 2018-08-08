@@ -1,0 +1,122 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+
+h1{
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;	/* shrinks the space between the different lines */
+	padding: 20px 0;	/* want some padding on the top and bottom, but not left right */
+}
+
+/*  
+	width
+		one line will have 3 squares, with width = 30% each square
+		30% 30% 30% = 90%
+
+	margin
+		margin will be on the left and the right of each square
+		3 squares * 2 sides = 6
+		10% / 6 = 1.66%
+
+	padding-bottom
+		To have the squares appear we give them a width, 
+		but we also need to give them a vertical length. 
+		We do this by padding-bottom instead of height 
+		https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/2658366
+
+	float
+		keep the squares inline instead of on new lines	
+
+	
+	Note:
+		doing all this has all the squares take up the entire web browser screen...
+		see container styling to fix this
+*/
+.square{
+	background: purple;
+	width: 30%;
+	margin: 1.66%;
+	padding-bottom: 30%;
+	float: left;
+	/* rounded corners on squares */
+	border-radius: 15%;
+	/* fade animation when changing color */
+	transition: background-color 0.6s;
+	/* be browser friendly */ 
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+}
+
+
+/* 
+	hold the 6 colored squares 
+
+	max-width
+		Makes the squares smaller. You can play around
+		with this number. 600px is what Colt used
+
+	margin
+		top & bottom = 0
+		left & right = auto (center)
+
+*/
+#container{
+	max-width: 600px;
+	/* 20px top and bottom for space, the auto centers in the middle */
+	margin: 20px auto;
+}
+
+/* the white stripe containing the buttons between the name and the squares */
+#stripe{
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+/* Span surrounding the RGB(X, Y, Z) */
+#pickedColorSpan{
+	font-size: 200%;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	/* inherit the font size from parent */
+	font-size: inherit;
+	/* time to fade in and out of hover mode */
+	transition: all 0.3s;
+	/* be browser friendly */ 
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+button:hover{
+	color: white;
+	background-color: steelblue;
+}
+
+/* Easy or hard mode */
+.selectedMode{
+	color: white;
+	background-color: steelblue;
+}
+
+/* span that says correct or try again */
+#correctMsgSpan{
+	/* push the buttons away to make room for the messages */
+	display: inline-block;
+	width: 20%;
+}
